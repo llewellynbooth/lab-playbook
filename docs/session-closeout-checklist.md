@@ -4,6 +4,23 @@ Complete this before ending every session. In order. No exceptions.
 
 ---
 
+## Completion Principle — NON-NEGOTIABLE
+
+**Never drop lesson objectives because of time.**
+
+If a session runs long, extend it. If a topic takes multiple sessions, that is fine.
+A fully equipped engineer is the goal -- not a fast one.
+
+When time pressure is felt:
+1. Stop and flag it explicitly
+2. Decide what carries forward -- document it
+3. Never silently drop a topic
+4. Add carry-forward items to the next week's plan before closing out
+
+This applies to every topic in every lesson. Nothing gets left behind undocumented.
+
+---
+
 ## 1. Lesson Objectives Review
 - [ ] Review original lesson objectives
 - [ ] Mark each as complete, deferred, or carried forward
@@ -13,11 +30,11 @@ Complete this before ending every session. In order. No exceptions.
 
 ## 2. Verification
 - [ ] All planned changes tested and confirmed working
-- [ ] AD replication healthy — repadmin /showrepl
-- [ ] pfSense gateway online — Status → Gateways
+- [ ] AD replication healthy -- repadmin /showrepl
+- [ ] pfSense gateway online -- Status -> Gateways
 - [ ] Internet connectivity confirmed from at least one VM
-- [ ] Time sync correct on all servers — w32tm /query /status
-- [ ] WAC dashboard — all servers connected
+- [ ] Time sync correct on all servers -- w32tm /query /status
+- [ ] WAC dashboard -- all servers connected
 
 ---
 
@@ -30,7 +47,7 @@ Complete this before ending every session. In order. No exceptions.
 
 ## 4. Workbook Entry
 - [ ] Week workbook entry completed before closing terminal
-- [ ] All sections filled — Problem Statement, Success Criteria, Failures, Reflections
+- [ ] All sections filled -- Problem Statement, Success Criteria, Failures, Reflections
 - [ ] ADR entries added for any design decisions
 - [ ] Risk Register updated for any accepted risks
 - [ ] Open items listed and carried forward
@@ -49,12 +66,12 @@ Complete this before ending every session. In order. No exceptions.
 - [ ] incident-log/ files committed
 - [ ] incident-log/README.md updated
 - [ ] README.md updated if lab status changed
-- [ ] git push confirmed — no local uncommitted changes
+- [ ] git push confirmed -- no local uncommitted changes
 
 ---
 
 ## 7. Lab State
-- [ ] All VMs in correct state — running or shut down intentionally
+- [ ] All VMs in correct state -- running or shut down intentionally
 - [ ] pfSense automatic stop action set to Shutdown
 - [ ] No VMs left in Paused or Saved state unintentionally
 - [ ] Passwords and credentials stored securely offline
@@ -65,19 +82,19 @@ Complete this before ending every session. In order. No exceptions.
 
 If anything comes up during the session that is outside the lesson objectives:
 
-1. Stop — flag it explicitly
-2. Assess — is this blocking the lesson or just interesting?
-3. Decide — defer to future week OR accept as addition to this session
-4. Document — if accepted, add to workbook as unplanned work
-5. Continue — return to lesson objectives
+1. Stop -- flag it explicitly
+2. Assess -- is this blocking the lesson or just interesting?
+3. Decide -- defer to future week OR accept as addition to this session
+4. Document -- if accepted, add to workbook as unplanned work
+5. Continue -- return to lesson objectives
 
 ---
 
-## Session Structure — Every Week
+## Session Structure -- Every Week
 
 | Phase | Action |
 |---|---|
 | Start | Review lesson objectives on screen |
-| During | Flag any drift — defer or accept explicitly |
+| During | Flag any drift -- defer or accept explicitly |
 | Before close | Run this checklist top to bottom |
-| Close | Commit to GitHub — workbook entry done first |
+| Close | Commit to GitHub -- workbook entry done first |
