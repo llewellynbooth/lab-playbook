@@ -12,3 +12,6 @@ One file per incident: INC-{number}-{short-description}.md
 | INC-003 | 20/05/2026 | P2 | pfSense WAN | IP conflict on 192.168.20.2 caused gateway offline | Resolved |
 | INC-004 | 20/05/2026 | P2 | pfSense/HVHOST1 | pfSense paused after host domain join restart | Resolved |
 | INC-005 | 20/05/2026 | P2 | Virtual Switch | vSwitch-Management isolation prevented host-to-VM communication | Resolved |
+| INC-006 | 26/05/2026 | P3 | JUMPHOST -- WAC | Inbox WAC feature blocking standalone installer | Resolved |
+| INC-007 | 26/05/2026 | P2 | JUMPHOST -- WAC | WAC v2.6 Kestrel certificate loader failure | Resolved |
+
