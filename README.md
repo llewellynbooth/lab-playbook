@@ -1,4 +1,4 @@
-﻿# Lab Playbook
+# Lab Playbook
 
 Single operational playbook for the Hybrid Automation Engineering Lab.
 
@@ -192,3 +192,5 @@ Single operational playbook for the Hybrid Automation Engineering Lab.
 - Terraform remote state -- not yet deployed
 - GitHub Actions pipelines -- not yet deployed
 - Audit logs in Log Analytics -- verify DCR collecting Security event log data
+
+- [Week 5 Workbook](weekly-workbooks/week-05.md)
