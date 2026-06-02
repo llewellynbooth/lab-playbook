@@ -194,3 +194,5 @@ Single operational playbook for the Hybrid Automation Engineering Lab.
 - Audit logs in Log Analytics -- verify DCR collecting Security event log data
 
 - [Week 5 Workbook](weekly-workbooks/week-05.md)
+
+- [Week 5b Workbook](weekly-workbooks/week-05b.md)
