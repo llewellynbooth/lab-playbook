@@ -15,3 +15,5 @@ One file per incident: INC-{number}-{short-description}.md
 | INC-006 | 26/05/2026 | P3 | JUMPHOST -- WAC | Inbox WAC feature blocking standalone installer | Resolved |
 | INC-007 | 26/05/2026 | P2 | JUMPHOST -- WAC | WAC v2.6 Kestrel certificate loader failure | Resolved |
 
+| INC-008 | 03/06/2026 | OCSP SigningFlags corrupted by COM object attempts | Resolved |
+| INC-009 | 03/06/2026 | WAC cert deleted without rollback plan | Resolved |
