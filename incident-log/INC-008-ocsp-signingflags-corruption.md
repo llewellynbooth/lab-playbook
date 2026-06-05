@@ -20,16 +20,13 @@ attempts, preventing the OCSP service from requesting a signing cert.
 ## Root Cause
 Used PowerShell COM objects for initial OCSP configuration instead of the MMC wizard.
 COM object approach requires exact flag values and clean state. Failed attempts wrote
-invalid flag combinations that persisted in the configuration.
+invalid flag combinations that persisted.
 
 ## Resolution
-Deleted revocation configuration entirely via MMC Online Responder snap-in.
-Rebuilt using Add Revocation Configuration wizard which sets all flags correctly.
+Deleted revocation configuration via MMC. Rebuilt using Add Revocation Configuration
+wizard which sets all flags correctly in one pass.
 
 ## Prevention
-Always use the MMC Online Responder wizard for initial OCSP revocation configuration.
-PowerShell COM objects are valid for scripted changes to existing working configurations only.
+Always use MMC Online Responder wizard for initial OCSP revocation configuration.
+PowerShell COM objects valid for scripted changes to existing working configurations only.
 Verify SigningFlags = 2 after any programmatic change.
-
-## ADR Update
-None required — existing ADR process sufficient.

@@ -7,16 +7,20 @@
 Deploy single-tier PKI with CA co-located on DC1. No offline Root CA.
 
 ## Reason
-RAM and infrastructure constraints make a dedicated offline Root CA VM impractical in the lab environment. Risk is accepted for a non-production environment.
+RAM and infrastructure constraints make a dedicated offline Root CA VM impractical
+in the lab environment. Risk is accepted for a non-production environment.
 
 ## Two-Tier Architecture (Production Standard)
 
 ### Design
-- **Tier 1 — Offline Root CA:** Air-gapped machine, powers on only to sign subordinate CA cert or CRL. Private key never touches a network. Ideally stored on HSM.
-- **Tier 2 — Subordinate (Issuing) CA:** Online, issues all end-entity certificates day to day.
+- Tier 1 — Offline Root CA: Air-gapped machine, powers on only to sign subordinate CA
+  cert or CRL. Private key never touches a network. Ideally stored on HSM.
+- Tier 2 — Subordinate (Issuing) CA: Online, issues all end-entity certificates day to day.
 
 ### Why It Matters
-The Root CA private key is the ultimate trust anchor for the entire PKI. If the issuing CA is compromised, it can be revoked by the Root CA and replaced. The Root CA key remains safe. In a single-tier design, a compromised CA means the entire PKI must be rebuilt from scratch.
+The Root CA private key is the ultimate trust anchor for the entire PKI. If the issuing
+CA is compromised, it can be revoked by the Root CA and replaced. The Root CA key remains
+safe. In a single-tier design, a compromised CA means the entire PKI must be rebuilt.
 
 ### When Two-Tier Is Required
 - Any production environment handling sensitive systems
@@ -33,4 +37,4 @@ The Root CA private key is the ultimate trust anchor for the entire PKI. If the 
 ## Consequences
 - Accepted risk: compromise of DC1 = compromise of CA private key
 - Mitigated by: CA backup, network segmentation, DC hardening
-- Revisit if lab evolves toward production simulation or client-facing scenarios
+- Revisit when lab evolves toward production simulation or client-facing scenarios

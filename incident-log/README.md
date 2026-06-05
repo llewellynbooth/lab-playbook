@@ -19,3 +19,5 @@ One file per incident: INC-{number}-{short-description}.md
 | INC-009 | 03/06/2026 | WAC cert deleted without rollback plan | Resolved |
 | INC-008 | 03/06/2026 | P2 | OCSP | OCSP SigningFlags corrupted by COM object attempts | Resolved |
 | INC-009 | 03/06/2026 | P1 | WAC | WAC cert deleted without rollback plan | Resolved |
+| INC-008 | 03/06/2026 | P2 | OCSP | OCSP SigningFlags corrupted by COM object attempts | Resolved |
+| INC-009 | 03/06/2026 | P1 | WAC | WAC cert deleted without rollback plan | Resolved |

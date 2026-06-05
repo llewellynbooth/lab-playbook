@@ -2,6 +2,7 @@
 
 **Date:** 03/06/2026
 **Status:** Accepted
+**Updated:** 03/06/2026 — gap analysis applied, roadmap extended to Week 23
 
 ## What Happened
 
@@ -17,34 +18,42 @@ from the plan without explicit documentation or decision making.
 ## Root Cause
 
 Two compounding failures:
-
-1. Sessions were driven by a session brief provided at the start rather than the playbook.
-   The playbook was never read at session start.
-2. No enforcement mechanism existed to flag deviations before work started.
+1. Sessions driven by session brief rather than playbook — playbook never read at session start
+2. No enforcement mechanism to flag deviations before work started
 
 ## Decision
 
-Accept all deviations as they stand. The work done was valuable and relevant to the goals.
-PKI is a core AZ-800/801 topic and the right decision for the environment. The deviation
-was correct in substance but wrong in process.
+Accept all deviations as they stand. Work done was valuable and relevant.
+PKI is a core AZ-800/801 topic. Deviation was correct in substance, wrong in process.
+
+## Gap Analysis Results (03/06/2026)
+
+Full AZ-800 and AZ-801 objective review identified the following missing topics
+not covered by the original roadmap:
+
+| Gap | Exam Domain | Added to Roadmap |
+|---|---|---|
+| Entra Connect Sync, Connect Health, staged rollout | AZ-800 D1 (30-35%) | Week 7b |
+| Windows Server containers, AKS on Windows Server | AZ-800 D3 (15-20%) | Week 11b |
+| Azure Migrate, Storage Migration Service | AZ-801 D4 (20-25%) | Week 14b |
+| DHCP, IPAM, Azure DNS, DNSSEC | AZ-800 D4 (15-20%) | Week 20 |
+| Defender for Identity, BitLocker, OSConfig, Entra Password Protection | AZ-801 D1 (25-30%) | Week 19 |
+| Azure Files, File Sync, Storage Spaces | AZ-800 D5 (15-20%) | Week 13 |
 
 ## Prevention
 
-Session Start Protocol document added to docs/session-start-protocol.md.
-Non-negotiable rule: playbook is read before every session. Any deviation is documented
-as an ADR before work starts.
+Session Start Protocol added to docs/session-start-protocol.md.
+Non-negotiable: playbook read before every session. Deviations documented as ADR before work starts.
 
-## Playbook Updates Applied (v4.0)
+## Playbook Updates Applied
 
-- Domain corrected from lab.local to lab.hybridinfra.dev throughout
-- Section 24.4 updated from Weeks 4-8 to revised Weeks 4-22 roadmap
-- Azure Local Lab 2 added as Weeks 15-18
-- End state summary updated to reflect both labs
-- Version incremented to v4.0
+- v4.0: Domain corrected lab.local to lab.hybridinfra.dev, section 24.4 revised, Azure Local added
+- v4.1: Gap analysis applied, roadmap extended to 23 weeks, exam domain coverage mapped
 
 ## Consequences
 
-- Linux Arc VM, Terraform, and OIDC deferred to Weeks 8-10
-- All deferred items documented with target weeks in session-start-protocol.md
-- No work is lost — everything done was valuable
-- Process is enforced going forward via session start protocol
+- Roadmap extended from 22 to 23 weeks
+- Three new sessions added: 7b (Hybrid Identity), 11b (Containers), 14b (Migration)
+- Week 19 expanded to include full security depth
+- Week 20 expanded to include networking depth
+- All gaps documented with target weeks

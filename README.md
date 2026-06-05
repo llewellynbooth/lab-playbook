@@ -203,3 +203,9 @@ Single operational playbook for the Hybrid Automation Engineering Lab.
 - [Session Start Protocol](docs/session-start-protocol.md)
 - [ADR-016 Playbook Re-alignment](docs/ADR-016-playbook-deviation-realignment.md)
 - [Playbook v4.0](playbook/Hybrid_Automation_Engineering_Lab_Playbook_v4.0.docx)
+
+- [Week 5b Workbook](weekly-workbooks/week-05b.md)
+- [Session Start Protocol](docs/session-start-protocol.md)
+- [ADR-015 Single-tier PKI](docs/ADR-015-single-tier-pki-accepted.md)
+- [ADR-016 Playbook Re-alignment](docs/ADR-016-playbook-deviation-realignment.md)
+- [Playbook v4.1](playbook/Hybrid_Automation_Engineering_Lab_Playbook_v4.1.docx)
